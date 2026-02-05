@@ -1,8 +1,6 @@
 #include <iostream>
 
-// TODO: Create a class template named Pair
-// It should accept TWO different data types
-
+// Class template Pair that accepts two different data types
 template <typename T1, typename T2>
 class Pair {
 private:
@@ -10,11 +8,12 @@ private:
     T2 second;
 
 public:
-    // TODO: Write PROTOTYPE for  constructor that initializes both values
-
-    // TODO: Write PROTOTYPE for  function named print()
-    // It should display both values in the format:
-    // (value1, value2)
+    // Constructor that initializes both values
+    Pair(T1 val1, T2 val2);
+    
+    // Function that displays both values in the format: (value1, value2)
+    void print();
 };
 
-// TO DO: Include implementation file here
+// Include implementation file
+#include "ClassPairTemplate.tpp"

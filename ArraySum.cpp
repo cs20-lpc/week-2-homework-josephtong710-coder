@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // TODO: Write a function template named arraySum
 // Parameters:
 //   - an array of type T
@@ -11,10 +10,13 @@ using namespace std;
 template <typename T>
 T arraySum(T arr[], int size) {
     // TODO: Initialize a variable to store the sum
-
+    T sum = 0;
     // TODO: Use a loop to add all elements
-
+    for (int i = 0; i < size;i++) {
+        sum += arr[i];
+    }
     // TODO: Return the sum
+    return sum;
 }
 
 int main() {
