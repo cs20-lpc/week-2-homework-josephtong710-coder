@@ -6,8 +6,9 @@ template <typename T>
 T myMax(T a, T b) {
     if (a > b){
         return a;
-        else 
-        return b;
+    }
+    else{
+    return b;
     }
 }
 int main() {
